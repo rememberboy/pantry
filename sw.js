@@ -1,7 +1,7 @@
 // Pantry — Service Worker
 // Caches the app shell for offline use
 
-const CACHE = 'pantry-v1';
+const CACHE = 'pantry-v2';
 const ASSETS = [
   './',
   './index.html'
