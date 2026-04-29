@@ -45,6 +45,12 @@
       "type": "Produce",
       "updatedAt": 1777478329595,
       "deleted": true
+    },
+    {
+      "id": "mokdgkxhgbbto",
+      "name": "Cereal",
+      "type": "Pantry",
+      "updatedAt": 1777486318325
     }
   ],
   "recipes": [
@@ -118,6 +124,19 @@
       ],
       "updatedAt": 1777478323788,
       "deleted": true
+    },
+    {
+      "id": "mokdgze6cdr0p",
+      "name": "Bowl of Cereal",
+      "ingredients": [
+        {
+          "id": "mokdgkxmx8rcf",
+          "name": "Cereal",
+          "amount": "1 bowl",
+          "type": "Pantry"
+        }
+      ],
+      "updatedAt": 1777486337071
     }
   ],
   "lists": [
@@ -200,5 +219,5 @@
       "deleted": true
     }
   ],
-  "lastSync": 1777479302294
+  "lastSync": 1777486337743
 }
