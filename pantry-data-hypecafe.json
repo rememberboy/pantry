@@ -92,7 +92,8 @@
           "type": "bread"
         }
       ],
-      "updatedAt": 1777265560313
+      "updatedAt": 1777478322003,
+      "deleted": true
     },
     {
       "id": "mok8d1pgvrtlz",
@@ -193,5 +194,5 @@
       "updatedAt": 1777265569766
     }
   ],
-  "lastSync": 1777478319075
+  "lastSync": 1777478322193
 }
