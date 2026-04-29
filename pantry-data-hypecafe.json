@@ -36,7 +36,8 @@
       "id": "mogq0yhmzklng",
       "name": "test3",
       "type": "bread",
-      "updatedAt": 1777265559706
+      "updatedAt": 1777478328583,
+      "deleted": true
     },
     {
       "id": "mok8c8hlkr7sz",
@@ -197,5 +198,5 @@
       "updatedAt": 1777265569766
     }
   ],
-  "lastSync": 1777478327555
+  "lastSync": 1777478328727
 }
