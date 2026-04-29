@@ -43,7 +43,8 @@
       "id": "mok8c8hlkr7sz",
       "name": "Banan",
       "type": "Produce",
-      "updatedAt": 1777477717497
+      "updatedAt": 1777478329595,
+      "deleted": true
     }
   ],
   "recipes": [
@@ -198,5 +199,5 @@
       "updatedAt": 1777265569766
     }
   ],
-  "lastSync": 1777478328727
+  "lastSync": 1777478329717
 }
