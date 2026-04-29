@@ -29,7 +29,8 @@
       "id": "mogq0qq76mfoy",
       "name": "test2",
       "type": "freezer",
-      "updatedAt": 1777265549647
+      "updatedAt": 1777478327394,
+      "deleted": true
     },
     {
       "id": "mogq0yhmzklng",
@@ -196,5 +197,5 @@
       "updatedAt": 1777265569766
     }
   ],
-  "lastSync": 1777478326468
+  "lastSync": 1777478327555
 }
