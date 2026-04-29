@@ -196,8 +196,9 @@
           "checked": false
         }
       ],
-      "updatedAt": 1777265569766
+      "updatedAt": 1777478356032,
+      "deleted": true
     }
   ],
-  "lastSync": 1777478345732
+  "lastSync": 1777478356204
 }
