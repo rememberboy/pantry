@@ -123,7 +123,7 @@
   "lists": [
     {
       "id": "mogpu1of57ah2",
-      "name": "Shopping List 1",
+      "name": "Hello Sally",
       "entries": [
         {
           "name": "Banana",
@@ -147,7 +147,7 @@
           "checked": false
         }
       ],
-      "updatedAt": 1777477795397
+      "updatedAt": 1777478376222
     },
     {
       "id": "mogq1692lt74m",
@@ -200,5 +200,5 @@
       "deleted": true
     }
   ],
-  "lastSync": 1777478359567
+  "lastSync": 1777478380175
 }
