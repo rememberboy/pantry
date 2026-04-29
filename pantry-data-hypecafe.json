@@ -1,6 +1,197 @@
 {
-  "items": [],
-  "recipes": [],
-  "lists": [],
-  "lastSync": 1777477639931
+  "items": [
+    {
+      "id": "mogpqe40t8n1t",
+      "name": "Banana",
+      "type": "Produce",
+      "updatedAt": 1777265066736
+    },
+    {
+      "id": "mogpqkdr4y97v",
+      "name": "Ice cream",
+      "type": "Freezer",
+      "updatedAt": 1777265074863
+    },
+    {
+      "id": "mogpqq0jipe7h",
+      "name": "Cherry",
+      "type": "Produce",
+      "updatedAt": 1777265082163
+    },
+    {
+      "id": "mogq0kj3o9hk3",
+      "name": "test1",
+      "type": "produce",
+      "updatedAt": 1777265541615
+    },
+    {
+      "id": "mogq0qq76mfoy",
+      "name": "test2",
+      "type": "freezer",
+      "updatedAt": 1777265549647
+    },
+    {
+      "id": "mogq0yhmzklng",
+      "name": "test3",
+      "type": "bread",
+      "updatedAt": 1777265559706
+    },
+    {
+      "id": "mok8c8hlkr7sz",
+      "name": "Banan",
+      "type": "Produce",
+      "updatedAt": 1777477717497
+    }
+  ],
+  "recipes": [
+    {
+      "id": "mogpqr463ss4b",
+      "name": "Banana split",
+      "ingredients": [
+        {
+          "id": "mogpqe40c1wsk",
+          "name": "Banana",
+          "amount": "2",
+          "type": "Produce"
+        },
+        {
+          "id": "mogpqkdrkbuv8",
+          "name": "Ice cream",
+          "amount": "1 quart",
+          "type": "Freezer"
+        },
+        {
+          "id": "mogpqq0jgrasy",
+          "name": "Cherry",
+          "amount": "1",
+          "type": "Produce"
+        }
+      ],
+      "updatedAt": 1777265083590
+    },
+    {
+      "id": "mogq0yyhlvfsz",
+      "name": "testrecipe",
+      "ingredients": [
+        {
+          "id": "mogq0kj3pqstz",
+          "name": "test1",
+          "amount": "asdf",
+          "type": "produce"
+        },
+        {
+          "id": "mogq0qq7wewml",
+          "name": "test2",
+          "amount": "asdfasfdas",
+          "type": "freezer"
+        },
+        {
+          "id": "mogq0yhmnwmbo",
+          "name": "test3",
+          "amount": "adfja",
+          "type": "bread"
+        }
+      ],
+      "updatedAt": 1777265560313
+    },
+    {
+      "id": "mok8d1pgvrtlz",
+      "name": "Banana split",
+      "ingredients": [
+        {
+          "id": "mok8cf8pqsx28",
+          "name": "Ice cream",
+          "amount": "1 quart",
+          "type": "Freezer"
+        },
+        {
+          "id": "mok8cpkcld0pv",
+          "name": "Banana",
+          "amount": "2",
+          "type": "Produce"
+        }
+      ],
+      "updatedAt": 1777477755364
+    }
+  ],
+  "lists": [
+    {
+      "id": "mogpu1of57ah2",
+      "name": "Shopping List 1",
+      "entries": [
+        {
+          "name": "Banana",
+          "amount": "2",
+          "type": "Produce",
+          "recipe": "Banana split",
+          "checked": false
+        },
+        {
+          "name": "Ice cream",
+          "amount": "1 quart",
+          "type": "Freezer",
+          "recipe": "Banana split",
+          "checked": false
+        },
+        {
+          "name": "Cherry",
+          "amount": "1",
+          "type": "Produce",
+          "recipe": "Banana split",
+          "checked": false
+        }
+      ],
+      "updatedAt": 1777265237247
+    },
+    {
+      "id": "mogq1692lt74m",
+      "name": "Shopping List 2",
+      "entries": [
+        {
+          "name": "Banana",
+          "amount": "2",
+          "type": "Produce",
+          "recipe": "Banana split",
+          "checked": false
+        },
+        {
+          "name": "Ice cream",
+          "amount": "1 quart",
+          "type": "Freezer",
+          "recipe": "Banana split",
+          "checked": false
+        },
+        {
+          "name": "Cherry",
+          "amount": "1",
+          "type": "Produce",
+          "recipe": "Banana split",
+          "checked": false
+        },
+        {
+          "name": "test1",
+          "amount": "asdf",
+          "type": "produce",
+          "recipe": "testrecipe",
+          "checked": false
+        },
+        {
+          "name": "test2",
+          "amount": "asdfasfdas",
+          "type": "freezer",
+          "recipe": "testrecipe",
+          "checked": false
+        },
+        {
+          "name": "test3",
+          "amount": "adfja",
+          "type": "bread",
+          "recipe": "testrecipe",
+          "checked": false
+        }
+      ],
+      "updatedAt": 1777265569766
+    }
+  ],
+  "lastSync": 1777477755543
 }
