@@ -112,7 +112,8 @@
           "type": "Produce"
         }
       ],
-      "updatedAt": 1777477755364
+      "updatedAt": 1777478323788,
+      "deleted": true
     }
   ],
   "lists": [
@@ -194,5 +195,5 @@
       "updatedAt": 1777265569766
     }
   ],
-  "lastSync": 1777478322193
+  "lastSync": 1777478323943
 }
