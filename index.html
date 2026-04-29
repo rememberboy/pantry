@@ -1107,9 +1107,13 @@ let state = {
 };
 
 async function loadState() {
-  state.items   = await dbGetAll('items');
-  state.recipes = await dbGetAll('recipes');
-  state.lists   = await dbGetAll('lists');
+  const allItems   = await dbGetAll('items');
+  const allRecipes = await dbGetAll('recipes');
+  const allLists   = await dbGetAll('lists');
+  // Filter out soft-deleted records for UI, but keep in DB for sync
+  state.items   = allItems.filter(i => !i.deleted);
+  state.recipes = allRecipes.filter(r => !r.deleted);
+  state.lists   = allLists.filter(l => !l.deleted);
 }
 
 // ════════════════════════════════════════════════════
@@ -1621,10 +1625,13 @@ async function lcDelete(id) {
   if (!list) return;
   const ok = await appConfirm('Delete "' + list.name + '"? This cannot be undone.', 'Delete');
   if (!ok) return;
+  list.deleted = true;
+  list.updatedAt = now();
+  await dbPut('lists', list);
   state.lists = state.lists.filter(l => l.id !== id);
-  await dbDelete('lists', id);
   renderLists();
   toast('List deleted');
+  doSync(true);
 }
 
 // List view actions
@@ -1740,10 +1747,12 @@ async function eiSave() {
 async function mgDeleteItem(id) {
   const ok = await appConfirm('Delete this item?', 'Delete');
   if (!ok) return;
+  const item = state.items.find(i => i.id === id);
+  if (item) { item.deleted = true; item.updatedAt = now(); await dbPut('items', item); }
   state.items = state.items.filter(i => i.id !== id);
-  await dbDelete('items', id);
   renderManage();
   toast('Item deleted');
+  doSync(true);
 }
 
 // Edit recipe
@@ -1800,10 +1809,12 @@ async function erSave() {
 async function mgDeleteRecipe(id) {
   const ok = await appConfirm('Delete this recipe?', 'Delete');
   if (!ok) return;
+  const recipe = state.recipes.find(r => r.id === id);
+  if (recipe) { recipe.deleted = true; recipe.updatedAt = now(); await dbPut('recipes', recipe); }
   state.recipes = state.recipes.filter(r => r.id !== id);
-  await dbDelete('recipes', id);
   renderManage();
   toast('Recipe deleted');
+  doSync(true);
 }
 
 // ════════════════════════════════════════════════════
@@ -1925,10 +1936,14 @@ async function doSync(silent = false) {
 
   try {
     const filename = dataFileName(account);
+    // Include deleted records in sync payload so other devices know about deletions
+    const allItems   = await dbGetAll('items');
+    const allRecipes = await dbGetAll('recipes');
+    const allLists   = await dbGetAll('lists');
     const localData = {
-      items:   state.items,
-      recipes: state.recipes,
-      lists:   state.lists,
+      items:   allItems,
+      recipes: allRecipes,
+      lists:   allLists,
       lastSync: now()
     };
 
@@ -1943,14 +1958,13 @@ async function doSync(silent = false) {
     // Write merged data back to GitHub
     await ghWriteFile(token, username, filename, merged, sha);
 
-    // Update local state
-    state.items   = merged.items   || [];
-    state.recipes = merged.recipes || [];
-    state.lists   = merged.lists   || [];
+    // Write ALL merged records to local DB (including deleted, for future sync reference)
+    for (const item   of (merged.items   || [])) await dbPut('items',   item);
+    for (const recipe of (merged.recipes || [])) await dbPut('recipes', recipe);
+    for (const list   of (merged.lists   || [])) await dbPut('lists',   list);
 
-    for (const item   of state.items)   await dbPut('items',   item);
-    for (const recipe of state.recipes) await dbPut('recipes', recipe);
-    for (const list   of state.lists)   await dbPut('lists',   list);
+    // Reload state filtering out deleted records
+    await loadState();
 
     const ts = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     await setMeta('lastSync', ts);
