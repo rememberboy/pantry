@@ -22,7 +22,8 @@
       "id": "mogq0kj3o9hk3",
       "name": "test1",
       "type": "produce",
-      "updatedAt": 1777265541615
+      "updatedAt": 1777478326250,
+      "deleted": true
     },
     {
       "id": "mogq0qq76mfoy",
@@ -195,5 +196,5 @@
       "updatedAt": 1777265569766
     }
   ],
-  "lastSync": 1777478323943
+  "lastSync": 1777478326468
 }
