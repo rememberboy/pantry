@@ -51,6 +51,18 @@
       "name": "Cereal",
       "type": "Pantry",
       "updatedAt": 1777486318325
+    },
+    {
+      "id": "mow45p2anrn06",
+      "name": "Gatorade",
+      "type": "Juice",
+      "updatedAt": 1778196288034
+    },
+    {
+      "id": "mow45ze50nvry",
+      "name": "Soda water",
+      "type": "Juice",
+      "updatedAt": 1778196301421
     }
   ],
   "recipes": [
@@ -219,5 +231,5 @@
       "deleted": true
     }
   ],
-  "lastSync": 1778195507127
+  "lastSync": 1778206207351
 }
