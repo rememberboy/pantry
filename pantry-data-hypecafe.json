@@ -189,6 +189,30 @@
       "name": "Burger patties",
       "type": "Meat / Fish",
       "updatedAt": 1778704496333
+    },
+    {
+      "id": "mp4iry3b4ftal",
+      "name": "Gnocchi",
+      "type": "Pantry",
+      "updatedAt": 1778704570199
+    },
+    {
+      "id": "mp4is84cwdl4a",
+      "name": "Cherry tomatoes",
+      "type": "Produce",
+      "updatedAt": 1778704583196
+    },
+    {
+      "id": "mp4it9jikuphp",
+      "name": "Ricotta cheese (optional)",
+      "type": "Dairy",
+      "updatedAt": 1778704631694
+    },
+    {
+      "id": "mp4itnr5496su",
+      "name": "Pesto (optional)",
+      "type": "Pantry",
+      "updatedAt": 1778704650113
     }
   ],
   "recipes": [
@@ -463,6 +487,43 @@
         }
       ],
       "updatedAt": 1778704526851
+    },
+    {
+      "id": "mp4itpbmplqo3",
+      "name": "Gnocchi - tomato spinach",
+      "ingredients": [
+        {
+          "id": "mp4iry3b40uea",
+          "name": "Gnocchi",
+          "amount": "1 pack",
+          "type": "Pantry"
+        },
+        {
+          "id": "mp4is84cod7yn",
+          "name": "Cherry tomatoes",
+          "amount": "1 pack",
+          "type": "Produce"
+        },
+        {
+          "id": "mp4isektcv2al",
+          "name": "Frozen spinach",
+          "amount": "1 cup",
+          "type": "Freezer"
+        },
+        {
+          "id": "mp4it9jiwdki7",
+          "name": "Ricotta cheese (optional)",
+          "amount": "Quarter pack",
+          "type": "Dairy"
+        },
+        {
+          "id": "mp4itnr5geejb",
+          "name": "Pesto (optional)",
+          "amount": "Spoon",
+          "type": "Pantry"
+        }
+      ],
+      "updatedAt": 1778704652146
     }
   ],
   "lists": [
@@ -545,5 +606,5 @@
       "deleted": true
     }
   ],
-  "lastSync": 1778704527018
+  "lastSync": 1778704652406
 }
