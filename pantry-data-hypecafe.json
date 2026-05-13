@@ -213,6 +213,18 @@
       "name": "Pesto (optional)",
       "type": "Pantry",
       "updatedAt": 1778704650113
+    },
+    {
+      "id": "mp4k5lg2qzq0v",
+      "name": "Brown rice quinoa pouch",
+      "type": "Pantry",
+      "updatedAt": 1778706886610
+    },
+    {
+      "id": "mp4kitbt2gdii",
+      "name": "Red peppers",
+      "type": "Produce",
+      "updatedAt": 1778707503353
     }
   ],
   "recipes": [
@@ -524,6 +536,31 @@
         }
       ],
       "updatedAt": 1778704652146
+    },
+    {
+      "id": "mp4kj2ng1kbni",
+      "name": "Stuffed peppers",
+      "ingredients": [
+        {
+          "id": "mp4k5lg7qf3nc",
+          "name": "Brown rice quinoa pouch",
+          "amount": "1-2",
+          "type": "Pantry"
+        },
+        {
+          "id": "mp4kitbvr8ajy",
+          "name": "Red peppers",
+          "amount": "2-3",
+          "type": "Produce"
+        },
+        {
+          "id": "mp4kj1fz1hu6x",
+          "name": "Grated cheese",
+          "amount": "1/2 cup",
+          "type": "Dairy"
+        }
+      ],
+      "updatedAt": 1778707515436
     }
   ],
   "lists": [
@@ -606,5 +643,5 @@
       "deleted": true
     }
   ],
-  "lastSync": 1778704652406
+  "lastSync": 1778707515861
 }
