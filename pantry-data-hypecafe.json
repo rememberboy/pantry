@@ -153,6 +153,24 @@
       "name": "Grated cheese",
       "type": "Dairy",
       "updatedAt": 1778704221929
+    },
+    {
+      "id": "mp4ilyf6e3qzv",
+      "name": "Tofu noodles",
+      "type": "Meat alternatives",
+      "updatedAt": 1778704290690
+    },
+    {
+      "id": "mp4im5flr1ex9",
+      "name": "Eggs",
+      "type": "Dairy",
+      "updatedAt": 1778704299777
+    },
+    {
+      "id": "mp4imtnxbcu9w",
+      "name": "Stir fry veg (pre-bagged/carrot/peppers)",
+      "type": "Produce",
+      "updatedAt": 1778704331181
     }
   ],
   "recipes": [
@@ -357,6 +375,31 @@
         }
       ],
       "updatedAt": 1778704222976
+    },
+    {
+      "id": "mp4imxgmryydj",
+      "name": "Stir fry 1",
+      "ingredients": [
+        {
+          "id": "mp4ilyf6laaef",
+          "name": "Tofu noodles",
+          "amount": "1-2 packs",
+          "type": "Meat alternatives"
+        },
+        {
+          "id": "mp4im5fl03p2n",
+          "name": "Eggs",
+          "amount": "5",
+          "type": "Dairy"
+        },
+        {
+          "id": "mp4imtnyl91xb",
+          "name": "Stir fry veg (pre-bagged/carrot/peppers)",
+          "amount": "1 pack",
+          "type": "Produce"
+        }
+      ],
+      "updatedAt": 1778704336102
     }
   ],
   "lists": [
@@ -439,5 +482,5 @@
       "deleted": true
     }
   ],
-  "lastSync": 1778704224169
+  "lastSync": 1778704336288
 }
