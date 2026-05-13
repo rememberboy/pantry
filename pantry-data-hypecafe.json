@@ -171,6 +171,12 @@
       "name": "Stir fry veg (pre-bagged/carrot/peppers)",
       "type": "Produce",
       "updatedAt": 1778704331181
+    },
+    {
+      "id": "mp4iob8x5gpkp",
+      "name": "Cauliflower pizza",
+      "type": "Freezer",
+      "updatedAt": 1778704400625
     }
   ],
   "recipes": [
@@ -400,6 +406,25 @@
         }
       ],
       "updatedAt": 1778704336102
+    },
+    {
+      "id": "mp4ioko9s458p",
+      "name": "Pizza",
+      "ingredients": [
+        {
+          "id": "mp4iob8xk5nol",
+          "name": "Cauliflower pizza",
+          "amount": "1",
+          "type": "Freezer"
+        },
+        {
+          "id": "mp4iojtb79hye",
+          "name": "Peas",
+          "amount": "1 cup",
+          "type": "Freezer"
+        }
+      ],
+      "updatedAt": 1778704412841
     }
   ],
   "lists": [
@@ -482,5 +507,5 @@
       "deleted": true
     }
   ],
-  "lastSync": 1778704336288
+  "lastSync": 1778704413040
 }
