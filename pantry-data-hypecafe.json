@@ -93,6 +93,24 @@
       "name": "Feta cheese",
       "type": "Dairy",
       "updatedAt": 1778703986315
+    },
+    {
+      "id": "mp4ig4n5af7qj",
+      "name": "Salmon",
+      "type": "Meat/Fish",
+      "updatedAt": 1778704018817
+    },
+    {
+      "id": "mp4igytkrxgg3",
+      "name": "Salmon veg (eg broccoli, asparagus)",
+      "type": "Produce",
+      "updatedAt": 1778704057928
+    },
+    {
+      "id": "mp4iha1l9rbl1",
+      "name": "Rice pouch",
+      "type": "Pantry",
+      "updatedAt": 1778704072473
     }
   ],
   "recipes": [
@@ -216,6 +234,31 @@
         }
       ],
       "updatedAt": 1778703991410
+    },
+    {
+      "id": "mp4ihbjlltl7a",
+      "name": "Salmon + veg",
+      "ingredients": [
+        {
+          "id": "mp4ig4n5f2ynf",
+          "name": "Salmon",
+          "amount": "1 pack",
+          "type": "Meat/Fish"
+        },
+        {
+          "id": "mp4igytkznsvv",
+          "name": "Salmon veg (eg broccoli, asparagus)",
+          "amount": "1",
+          "type": "Produce"
+        },
+        {
+          "id": "mp4iha1ltreyh",
+          "name": "Rice pouch",
+          "amount": "1",
+          "type": "Pantry"
+        }
+      ],
+      "updatedAt": 1778704074418
     }
   ],
   "lists": [
@@ -298,5 +341,5 @@
       "deleted": true
     }
   ],
-  "lastSync": 1778703991621
+  "lastSync": 1778704074600
 }
