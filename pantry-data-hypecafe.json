@@ -111,6 +111,24 @@
       "name": "Rice pouch",
       "type": "Pantry",
       "updatedAt": 1778704072473
+    },
+    {
+      "id": "mp4ihpphjwcox",
+      "name": "White fish",
+      "type": "Freezer",
+      "updatedAt": 1778704092773
+    },
+    {
+      "id": "mp4ii0vp7ztt6",
+      "name": "Peas",
+      "type": "Freezer",
+      "updatedAt": 1778704107253
+    },
+    {
+      "id": "mp4iifdyndi2u",
+      "name": "Sweet/regular potato",
+      "type": "Produce",
+      "updatedAt": 1778704126054
     }
   ],
   "recipes": [
@@ -259,6 +277,31 @@
         }
       ],
       "updatedAt": 1778704074418
+    },
+    {
+      "id": "mp4iiicc2grsc",
+      "name": "Fish and chips",
+      "ingredients": [
+        {
+          "id": "mp4ihpphxii2i",
+          "name": "White fish",
+          "amount": "3",
+          "type": "Freezer"
+        },
+        {
+          "id": "mp4ii0vplxl84",
+          "name": "Peas",
+          "amount": "2 cups",
+          "type": "Freezer"
+        },
+        {
+          "id": "mp4iifdzr34d5",
+          "name": "Sweet/regular potato",
+          "amount": "2",
+          "type": "Produce"
+        }
+      ],
+      "updatedAt": 1778704129884
     }
   ],
   "lists": [
@@ -341,5 +384,5 @@
       "deleted": true
     }
   ],
-  "lastSync": 1778704074600
+  "lastSync": 1778704130045
 }
