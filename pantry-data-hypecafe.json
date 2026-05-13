@@ -177,6 +177,18 @@
       "name": "Cauliflower pizza",
       "type": "Freezer",
       "updatedAt": 1778704400625
+    },
+    {
+      "id": "mp4ipkiv4b5hq",
+      "name": "White fish /breaded fish",
+      "type": "Freezer",
+      "updatedAt": 1778704459303
+    },
+    {
+      "id": "mp4iqd3hnu0rt",
+      "name": "Burger patties",
+      "type": "Meat / Fish",
+      "updatedAt": 1778704496333
     }
   ],
   "recipes": [
@@ -332,12 +344,6 @@
       "name": "Fish and chips",
       "ingredients": [
         {
-          "id": "mp4ihpphxii2i",
-          "name": "White fish",
-          "amount": "3",
-          "type": "Freezer"
-        },
-        {
           "id": "mp4ii0vplxl84",
           "name": "Peas",
           "amount": "2 cups",
@@ -348,9 +354,15 @@
           "name": "Sweet/regular potato",
           "amount": "2",
           "type": "Produce"
+        },
+        {
+          "id": "mp4ipkiviv53h",
+          "name": "White fish /breaded fish",
+          "amount": "3",
+          "type": "Freezer"
         }
       ],
-      "updatedAt": 1778704129884
+      "updatedAt": 1778704461932
     },
     {
       "id": "mp4iki68fahak",
@@ -426,6 +438,31 @@
         }
       ],
       "updatedAt": 1778704412841
+    },
+    {
+      "id": "mp4ir0n7ckehy",
+      "name": "Burgers",
+      "ingredients": [
+        {
+          "id": "mp4iqd3izewl6",
+          "name": "Burger patties",
+          "amount": "4",
+          "type": "Meat / Fish"
+        },
+        {
+          "id": "mp4iqkjg7kxp2",
+          "name": "Tomatoes",
+          "amount": "1",
+          "type": "Produce"
+        },
+        {
+          "id": "mp4iqzqc6og3n",
+          "name": "Burger patties",
+          "amount": "3",
+          "type": "Bread"
+        }
+      ],
+      "updatedAt": 1778704526851
     }
   ],
   "lists": [
@@ -508,5 +545,5 @@
       "deleted": true
     }
   ],
-  "lastSync": 1778704435257
+  "lastSync": 1778704527018
 }
